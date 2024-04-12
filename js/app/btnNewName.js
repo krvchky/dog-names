@@ -13,4 +13,10 @@ export function setName() {
 
   // виводимо випадкову кличку
   randomName.innerHTML = dogNames[randomNum];
+
+  // Зберігаємо поточну кличку
+  localStorage.setItem("dogName", dogNames[randomNum]);
 }
+
+// Виводимо кличку, яку ми запам'ятали
+randomName.innerHTML = localStorage.getItem("dogName");

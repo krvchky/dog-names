@@ -4,7 +4,6 @@ import { newName, saveName } from "./utils/elements.js";
 
 // Вішаємо подію кліку на кнопку
 newName.onclick = setName;
-setName();
 
 // Вішаємо подію кліку на кнопку збереження клички
 saveName.onclick = saveDogName;
